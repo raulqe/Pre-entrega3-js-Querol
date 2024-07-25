@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="main-container"class="container">
+           <div class="screen-section2">
+                <div id="screener-section" class="screener">
+
+                        <fieldset id="contenedor-dialogos">
+
+                            <div class="dialogos" id="dialogoBienvenido">
+                                <h2>¡BIENVENIDO A TEXAS SCAPE!</h2>
+                                <p class="line1">El juego interactivo inspirado en el lejano Oeste.</p>
+                                <p class="line1">Crea tu personaje para comenzar tu aventura:</p>
+                            </div>
+                            <div class="dialogos" id="selectProfesion" style="display:none">
+                                <h2>Selecciona alguna de las profesiones disponibles: </h2>
+                                <p class="line">MILITAR CONFEDERADO, DOCTOR, BUSCADOR DE ORO.</p>
+                            </div>
+
+                            <div class="dialogos" id="dialogoBienvenidoPersonaje" style="display:none;">
+                                <p>¡Bienvenidos a Texas Scape!</p>
+                                <h1 id="namePersonaje"></h1>
+                                <h3 id="profesionPersonaje" class="line3"></h3>
+                            </div>
+                            
+
+                        </fieldset>
+        
+                    <div class="form">
+                        <form id="playerDataForm" action="">
+                           
+                            <div class="div-form">
+
+                                <fieldset class="form">
+                                    <label for="name-label">Name:</label>
+                                    <input type="text" name="name" id="name" class="input" placeholder="  Enter your name." required>
+        
+                                <fieldset class="fieldset-form">
+                                    <label for="sex-male">Male:
+                                        <input type="radio" id="sex" required name="sex" class="input" value="true" placeholder="Male"></label>
+                                    <label for="sex-female">Female:
+                                        <input type="radio" id="sex" required name="sex" class="input" value="false" placeholder="Male"></label>
+                                </fieldset>
+
+                               
+                                    <label for="profession-label">Profession:</label>
+                                    <input type="text" name="profession" id="profession" class="input" placeholder="  Enter your profession" required>
+                                    <button class="btn_submit" type="submit" id="continueBtn">Continue</button> 
+                                </fieldset>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- <button id="btn-music" class="btn-music">Play</button> -->
+           </div>
+        </div>
+    </main>
+    <script src="js/game-app.js"></script> 
+</body>
+</html>
